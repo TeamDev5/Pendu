@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pendu</h1>
+    <p class="text"><b>Trouve le mot caché</b></p>
+
+    <div class="game-content">
+
+        <svg height="250" width="200" class="figure-content">
+            <!--x=horizontal y=vertical-->
+            <!--support-->
+            <line x1="60" y1="20" x2="140" y2="20"  />
+            <line x1="140" y1="20" x2="140" y2="50"  />
+            <line x1="60" y1="20" x2="60" y2="230"  />
+            <line x1="20" y1="230" x2="100" y2="230"  />
+            <!--bonhomme-->
+            <!--Tete-->
+            <circle cx="140" cy="70" r="20" class="figure-part" />
+            <!--corps-->
+            <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+            <!--Bras-->
+            <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+            <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+            <!--Jambes-->
+            <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+            <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+        </svg>
+
+        <div class="mauvaise-lettres-content">
+            <p>Mauvaises lettres</p>
+            <div id="mauvaiselettres">
+            </div>
+        </div>
+
+        <div class="mot" id="mot"> </div>
+    </div>
+
+        <!--Message final-->
+        <div class="popup-content" id="popup-content">
+            <div class="popup">
+                <h2 id="message-final">Bravo !!!</h2>
+                <button id="play-bouton">Rejouer</button>
+            </div>
+        </div>
+
+        <!--notif -->
+        <div class="notification-content" id="notification-content">
+            <p class="done">TU AS DEJA ESSAYÉ CETTE LETTRE</p>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
